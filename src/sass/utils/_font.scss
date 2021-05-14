@@ -1,0 +1,69 @@
+html {
+	font-size: $fzBaseHtml;
+}
+
+body {
+		font-family: "Play", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: 600;
+	padding: 0.5em 1rem;
+	line-height: 1.2;
+}
+
+h1,
+.h1 {
+	font-size: $fzBaseHeading * 2.5;
+}
+h2,
+.h2 {
+	font-size: $fzBaseHeading * 2;
+}
+
+h3,
+.h3 {
+	font-size: $fzBaseHeading * 1.75;
+}
+h4,
+.h4 {
+	font-size: $fzBaseHeading * 1.5;
+}
+
+h5,
+.h5 {
+	font-size: $fzBaseHeading * 1.25;
+}
+
+h6,
+.h6 {
+	font-size: $fzBaseHeading * 1;
+}
