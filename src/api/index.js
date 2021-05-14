@@ -1,6 +1,6 @@
 import axios from "axios"
-const baseAxios = axios.create({ baseURL: "http://localhost:7001/api/" })
+const baseAxios = axios.create({ baseURL: "https://yalantis-react-school-api.yalantis.com/api/" })
 
 export const userAPI = {
-	getAllEmployees: () => baseAxios.get(`task0/users`),
+	getAllUsers: () => baseAxios.get(`task0/users`),
 }

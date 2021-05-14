@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -133,7 +132,7 @@ form {
     flex-basis: 100%;
     position: relative;
     align-items: center;
-    margin-bottom: 3px; }
+    margin-bottom: 20px; }
     form .form-group.divider {
       background-color: #e4e4e4;
       margin-top: 10px;
@@ -179,7 +178,7 @@ form {
   form input[type="checkbox"], form input[type="radio"] {
     height: 15px;
     width: 15px;
-    margin: 0.5em 0 0.5em 1rem; }
+    margin: 0.5em 0 0.5em 0; }
   form input[type="checkbox"] + label {
     margin-left: 20px; }
   form input[type="radio"] + label {
@@ -196,7 +195,7 @@ form {
     color: #d6000a;
     line-height: 11px;
     font-size: inherit;
-    background-color: #ffffff;
+    background-color: #fff;
     z-index: 100; }
     form .error:not(:empty) ~ input,
     form .error:not(:empty) ~ textarea {
@@ -496,25 +495,33 @@ header {
     header .logo a {
       color: #323030; }
 
-.MuiTableBody-root .MuiTableCell-body.MuiTableCell-alignLeft[value="SELL"] {
-  background-color: #ffd6d8; }
+.preloaderWrap {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  margin-right: 0;
+  margin-top: 32px;
+  margin-left: calc(50% - 32px);
+  z-index: 1; }
 
-.MuiTableBody-root .MuiTableCell-body.MuiTableCell-alignLeft[value="BUY"] {
-  background-color: #c7e8c6; }
-
-.MuiTableCell-root {
-  overflow-wrap: anywhere; }
-
-.MuiTableCell-root.hide {
-  display: none; }
-
-.details-wrap {
-  margin: 0.5em 1rem; }
-  .details-wrap .row {
-    display: table-row; }
-    .details-wrap .row div {
-      display: table-cell;
-      padding: 0 1rem;
-      border: 1px solid #CDBEA7; }
-
-/* Класс начинается с MTableToolbar-title-  (т.е. префикс не важен) */
+.employees {
+  display: flex; }
+  .employees .listWrap {
+    width: 70vw;
+    padding: 20px; }
+    .employees .listWrap .list {
+      display: flex;
+      flex-wrap: wrap; }
+    .employees .listWrap .oneCharWrap {
+      flex-direction: column;
+      display: flex;
+      padding: 10px; }
+      .employees .listWrap .oneCharWrap > div:first-child {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px; }
+      .employees .listWrap .oneCharWrap .name {
+        font-size: 16px; }
+  .employees .birthdayWrap {
+    max-width: 30vw;
+    background-color: #0000ff; }

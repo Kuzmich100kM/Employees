@@ -1,194 +1,201 @@
 // Form for input, textarea, select, checkbox
 form {
-	//margin: 20px auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: start;
-	z-index: 100;
-	width: 100%;
-	//	min-height: 300px;
+    //margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    z-index: 100;
+    width: 100%;
+    //	min-height: 300px;
 
-	.form-group {
-		display: flex;
-		flex-basis: 100%;
-		position: relative;
-		align-items: center;
-		margin-bottom: 3px;
+    .form-group {
+        display: flex;
+        flex-basis: 100%;
+        position: relative;
+        align-items: center;
+        margin-bottom: 20px;
 
-		&.divider {
-			background-color: color($gray, -10);
-			margin-top: 10px;
-			padding: 3px 15px;
-		}
-		&.disabled {
-			opacity: 0.6;
-			pointer-events: none;
-		}
-	}
+        &.divider {
+            background-color: color($gray, -10);
+            margin-top: 10px;
+            padding: 3px 15px;
+        }
 
-	input,
-	textarea,
-	select {
-		height: 28px;
-		width: 100%;
-		padding: 0 1rem;
-		color: $dark;
-		border: 1px solid color($light, 10);
-		line-height: $fzBaseHtml;
-		outline: none;
-		text-align: right;
+        &.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+    }
 
-		&:focus,
-		&:hover {
-			border: 1px solid color($blue, -30);
-			outline-offset: 0;
-		}
-	}
+    input,
+    textarea,
+    select {
+        height: 28px;
+        width: 100%;
+        padding: 0 1rem;
+        color: $dark;
+        border: 1px solid color($light, 10);
+        line-height: $fzBaseHtml;
+        outline: none;
+        text-align: right;
 
-	textarea {
-		min-height: 52px;
-		height: auto;
-		padding-top: 7px;
-		text-align: left;
+        &:focus,
+        &:hover {
+            border: 1px solid color($blue, -30);
+            outline-offset: 0;
+        }
+    }
 
-		& ~ label {
-			align-self: flex-start;
-			position: inherit;
-		}
-	}
+    textarea {
+        min-height: 52px;
+        height: auto;
+        padding-top: 7px;
+        text-align: left;
 
-	label {
-		position: absolute;
-		padding: 0.5em 1rem;
-		left: 0;
-		transform: translateX(0);
-		transition: 0.2s ease all;
-		white-space: nowrap;
-		pointer-events: none;
-		color: $gray;
-	}
+        &~label {
+            align-self: flex-start;
+            position: inherit;
+        }
+    }
 
-	input {
-		&[type="checkbox"],
-		&[type="radio"] {
-			height: 15px;
-			width: 15px;
-			margin: 0.5em 0 0.5em 1rem;
-		}
+    label {
+        position: absolute;
+        padding: 0.5em 1rem;
+        left: 0;
+        transform: translateX(0);
+        transition: 0.2s ease all;
+        white-space: nowrap;
+        pointer-events: none;
+        color: $gray;
+    }
 
-		&[type="checkbox"] + label {
-			margin-left: 20px;
-		}
+    input {
 
-		&[type="radio"] + label {
-			padding: 0.5em 5px;
-			position: relative;
-			color: $black;
-		}
-	}
+        &[type="checkbox"],
+        &[type="radio"] {
+            height: 15px;
+            width: 15px;
+            margin: 0.5em 0 0.5em 0;
+        }
 
-	.radio {
-		display: flex;
-	}
+        &[type="checkbox"]+label {
+            margin-left: 20px;
+        }
 
-	.error {
-		width: 100%;
-		position: absolute;
-		right: -102%;
-		text-align: left;
-		color: color($danger, 20);
-		line-height: 11px;
-		font-size: inherit;
-		background-color: $white;
-		z-index: 100;
+        &[type="radio"]+label {
+            padding: 0.5em 5px;
+            position: relative;
+            color: $black;
+        }
+    }
 
-		&:not(:empty) ~ input,
-		&:not(:empty) ~ textarea {
-			box-shadow: none;
-			color: color($danger, 20);
-			background-color: color($danger, -36);
-			border: 1px solid color($danger, -25);
-			offset: none;
-		}
+    .radio {
+        display: flex;
+    }
 
-		&:not(:empty) ~ label,
-		&:not(:empty) ~ textarea::placeholder {
-			color: color($danger, 20);
-		}
-	}
+    .error {
+        width: 100%;
+        position: absolute;
+        right: -102%;
+        text-align: left;
+        color: color($danger, 20);
+        line-height: 11px;
+        font-size: inherit;
+        background-color: $white;
+        z-index: 100;
 
-	.first-column {
-		flex-basis: calc(60% - 2px);
-		margin-right: 4px;
-	}
-	
-	.second-column {
-		flex-basis: calc(40% - 2px);
-	}
-	&.column-49 {
-		flex-basis: 49%;
-	}
-	
-	.column-3-1 {
-		flex-basis: calc(34% - 2px);
-		//flex-basis: 33% ;
-		
-	}
-	.column-3-2 {
-		flex-basis: calc(33% - 4px);
-		margin: 0 4px;
-	}
-	.column-3-3 {
-		flex-basis: calc(33% - 2px);
-	}
+        &:not(:empty)~input,
+        &:not(:empty)~textarea {
+            box-shadow: none;
+            color: color($danger, 20);
+            background-color: color($danger, -36);
+            border: 1px solid color($danger, -25);
+            offset: none;
+        }
 
-	// For Input 22px height need add class, ag: <FormPanel cls="small"/>
-	&.small {
-		input {
-			height: 22px;
-		}
-	}
+        &:not(:empty)~label,
+        &:not(:empty)~textarea::placeholder {
+            color: color($danger, 20);
+        }
+    }
+
+    .first-column {
+        flex-basis: calc(60% - 2px);
+        margin-right: 4px;
+    }
+
+    .second-column {
+        flex-basis: calc(40% - 2px);
+    }
+
+    &.column-49 {
+        flex-basis: 49%;
+    }
+
+    .column-3-1 {
+        flex-basis: calc(34% - 2px);
+        //flex-basis: 33% ;
+
+    }
+
+    .column-3-2 {
+        flex-basis: calc(33% - 4px);
+        margin: 0 4px;
+    }
+
+    .column-3-3 {
+        flex-basis: calc(33% - 2px);
+    }
+
+    // For Input 22px height need add class, ag: <FormPanel cls="small"/>
+    &.small {
+        input {
+            height: 22px;
+        }
+    }
 }
 
 // 2 стиль оформления формы (rightLabel)
 // Добавить класс (rightLabel) в ф.(Input), в файле(InputConponents.js).
 // (<div className= `form-group rightLabel`) >
 form .form-group.rightLabel input {
-	text-align: left;
+    text-align: left;
 
-	&:focus ~ label,
-	&:not(:placeholder-shown) ~ label {
-		left: 100%;
-		transform: translateX(-100%);
-		font-size: inherit;
-		opacity: 0.7;
-	}
+    &:focus~label,
+    &:not(:placeholder-shown)~label {
+        left: 100%;
+        transform: translateX(-100%);
+        font-size: inherit;
+        opacity: 0.7;
+    }
 
-	.error {
-		left: -102%;
-		text-align: right;
-	}
+    .error {
+        left: -102%;
+        text-align: right;
+    }
 }
 
 // 3 стиль оформления формы (leftLabel)
 // Добавить класс (leftLabel) в ф.(Input), в файле(InputConponents.js).
 // (<div className= `form-group leftLabel`) >
 form .form-group.leftLabel {
-	label {
-		position: relative;
-		order: -1;
-	}
+    label {
+        position: relative;
+        order: -1;
+    }
 }
 
 .wrap-form {
-	width: 100%;
-	min-height: 300px;
+    width: 100%;
+    min-height: 300px;
 }
+
 .wrap-btn {
-	width: 100%;
-	display: flex;
+    width: 100%;
+    display: flex;
 }
+
 // form button {
 // 	margin: 15px 0 15px;
 // 	padding: 5px 15px;

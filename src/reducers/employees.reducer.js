@@ -1,6 +1,6 @@
-import { userAPI } from "../api"
+//import { userAPI } from "../api"
 
-const GET_ALL_EMPLOYEES = "GET_ALL_EMPLOYEES"
+const GET_ALL_USERS = "GET_ALL_USERS"
 
 // employees = [{
 //		"id": "5e00928d91e7feaa9872ec08",
@@ -10,17 +10,17 @@ const GET_ALL_EMPLOYEES = "GET_ALL_EMPLOYEES"
 //},, {...}]
 
 let initialState = {
-	employees: [],
+	users: [],
 }
 
 export default function employeesReducer(state = initialState, action) {
 	switch (action.type) {
-		case GET_ALL_EMPLOYEES:
-			return { ...state, employees: action.usersData }
+		case GET_ALL_USERS:
+			return { ...state, users: action.usersData }
 
 		default:
 			return state
 	}
 }
 
-export const getAllEmployeesAC = usersData => ({ type: GET_ALL_EMPLOYEES, usersData })
+export const getAllUsersAC = usersData => ({ type: GET_ALL_USERS, usersData })
