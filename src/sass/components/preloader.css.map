@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EACd,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,YAAY,EAAE,CAAC;EACf,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,gBAAgB;EAC7B,OAAO,EAAE,CAAC;CACV",
-    "sources": [
-        "preloader.scss"
-    ],
-    "names": [],
-    "file": "preloader.css"
-}

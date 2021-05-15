@@ -42,6 +42,7 @@ export default function useFormHooks(initModels, initValue, submitCb, valueCb) {
 				//parseInput(m)
 				validateInput(m)
 			})
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [inputs, isDoneFirstSubmit])
 
 	const handleSubmit = e => {

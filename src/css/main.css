@@ -120,11 +120,33 @@ h6,
 .h6 {
   font-size: 1rem; }
 
+.page404 {
+  font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #C29545;
+  border-bottom: 1px solid #000; }
+  .page404 > div:first-child {
+    font-size: 10vw; }
+
+.home {
+  font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #C29545;
+  border-bottom: 1px solid #000; }
+
 form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: flex-start;
   z-index: 100;
   width: 100%; }
   form .form-group {
@@ -522,6 +544,22 @@ header {
         margin-bottom: 20px; }
       .employees .listWrap .oneCharWrap .name {
         font-size: 16px; }
+        .employees .listWrap .oneCharWrap .name.active {
+          color: #0000ff; }
   .employees .birthdayWrap {
+    padding: 20px;
     max-width: 30vw;
-    background-color: #0000ff; }
+    border-left: 1px solid; }
+    .employees .birthdayWrap .oneMonthWrap {
+      flex-direction: column;
+      display: flex;
+      padding: 10px; }
+      .employees .birthdayWrap .oneMonthWrap > div:first-child {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px; }
+      .employees .birthdayWrap .oneMonthWrap .name {
+        font-size: 14px;
+        line-height: 1.3em; }
+        .employees .birthdayWrap .oneMonthWrap .name.active {
+          color: #0000ff; }

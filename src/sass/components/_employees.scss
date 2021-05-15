@@ -1,10 +1,8 @@
 .employees {
     display: flex;
 
-
     .listWrap {
         width: 70vw;
-        //background-color: $green;
         padding: 20px;
 
         .list {
@@ -15,8 +13,6 @@
         .oneCharWrap {
             flex-direction: column;
             display: flex;
-            // background-color: $secomdary;
-            // border: 1px solid #777;
             padding: 10px;
 
             &>div:first-child {
@@ -28,14 +24,40 @@
             .name {
                 font-size: 16px;
 
+                &.active {
+                    color: $blue;
+                }
             }
-
-
         }
     }
 
     .birthdayWrap {
+        padding: 20px;
         max-width: 30vw;
-        background-color: $blue;
+        border-left: 1px solid;
+
+        .oneMonthWrap {
+            flex-direction: column;
+            display: flex;
+            padding: 10px;
+
+            &>div:first-child {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .name {
+                font-size: 14px;
+                line-height: 1.3em;
+
+                &.active {
+                    color: $blue;
+                }
+
+            }
+
+
+        }
     }
 }

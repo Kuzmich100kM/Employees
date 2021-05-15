@@ -1,6 +1,7 @@
 import React from "react"
 import useFormHooks from "./useFormHooks"
 import { Input, Radio, Textarea, Checkbox, Select, Divider } from "./InputComponents"
+import { v4 as uuidv4 } from "uuid"
 
 export default function FormPanel({
 	initModels,
@@ -25,7 +26,7 @@ export default function FormPanel({
 				let type = m.type
 				if (m.type === "password") type = "input"
 				const Component = Components[capitalize(type)]
-				return <Component key={m.name} inputChange={inputChange} value={inputs[m.name]} {...m} />
+				return <Component key={uuidv4()} inputChange={inputChange} value={inputs[m.name]} {...m} />
 			})}
 			{firstTag}
 			{secondTag}

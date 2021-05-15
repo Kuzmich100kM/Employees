@@ -1,6 +1,7 @@
 // 2 стиль оформления формы (rightLabel)
 // Добавить класс (rightLabel) в ф.(Input)- (<div className= `form-group rightLabel`) >
 import React, { useState } from "react"
+import { v4 as uuidv4 } from "uuid"
 
 export function Input({ name, label, value, type, alert, inputChange, className, placeholder }) {
 	return (
@@ -68,7 +69,8 @@ export function Radio({ name, label, value, checked, alert, options, inputChange
 				options.map(o => (
 					<div key={o.value} className="radio">
 						<input
-							id={o.name}
+							id={uuidv4()}
+							//id={o.name}
 							name={name}
 							type="radio"
 							value={o.value}
