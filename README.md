@@ -1,6 +1,6 @@
 # Test task for Yalantis React.js School (online)
 
-![](public/pic/scr 15-05-2021 emploees-page.jpg "emploees page")
+![](src/pic/scr-15-05-2021-emploees.png "emploees page")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
