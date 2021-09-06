@@ -1,4 +1,4 @@
-# Test task for Yalantis React.js School (online)
+# Test task
 
 ![](src/assets/img/scr-15-05-2021-emploees-4.png "emploees page")
 
