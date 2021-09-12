@@ -1,8 +1,12 @@
-# Test task for Yalantis React.js School (online)
+# Employees (React.js test task)
 
 ![](src/assets/img/scr-15-05-2021-emploees-4.png "emploees page")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Demo page
+
+[React](https://kuzmich100km.github.io/employees/)
 
 ## How to use
 
