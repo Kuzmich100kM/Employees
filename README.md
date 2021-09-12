@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo page
 
-[React](https://kuzmich100km.github.io/employees/)
+[React](https://kuzmich100km.github.io/mployees/)
 
 ## How to use
 
