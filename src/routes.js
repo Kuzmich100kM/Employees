@@ -7,9 +7,9 @@ import Page404 from "./components/Page404"
 export default function AllRoutes() {
 	return (
 		<Switch>
-			<Route exact path="/" render={() => <Home />} />
-			<Route path="/employees" render={() => <Employees />} />
-			<Route path="*" render={() => <Page404 />} />
+			<Route exact path="/" component={Home} />
+			<Route path="/employees" component={Employees} />
+			<Route path="*" component={Page404} />
 		</Switch>
 	)
 }

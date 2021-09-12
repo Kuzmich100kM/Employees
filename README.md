@@ -4,9 +4,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Demo page
-
-[React](https://kuzmich100km.github.io/mployees/)
+## Demo page --> [gh-pages](https://kuzmich100km.github.io/employees/)
 
 ## How to use
 
