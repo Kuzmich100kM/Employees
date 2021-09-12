@@ -6,7 +6,7 @@ import history from "./utils/history"
 
 export default function App() {
 	return (
-		<Router history={history} basename={process.env.PUBLIC_URL}>
+		<Router history={history}>
 			<Header />
 			<AllRoutes />
 		</Router>
